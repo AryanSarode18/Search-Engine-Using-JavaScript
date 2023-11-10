@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #6f36ff;
+}
+
+.wrapper{
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+  transform: scale(1.1);
+  flex-wrap: wrap;
+}
+
+.wrapper header{
+  font-size: 19px;
+  font-weight: 500;
+  padding: 2px 4px;
+  color: #6f36ff;
+}
+
+.wrapper header::before{
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  background: #bfbfbf;
+  width: 100%;
+  height: 2px;
+  margin-top: 8px;
+}
+
+.wrapper .search_bx{
+  margin-top: 30px;
+}
+
+.wrapper .search_bx form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .search_bx form input{
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border: 2px solid #bfbfbf;
+  border-radius: 3px;
+  padding-left: 8px;
+  font-size: 15px;
+  color: #6f36ff;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.wrapper .search_bx form input:focus{
+  border-color: #6f36ff;
+}
+
+.wrapper .search_bx form button{
+  height: 45px;
+  width: 45%;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background: #6f36ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrapper .search_bx form button i{
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.wrapper .search_bx form .icons i{
+  line-height: 45px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  background: #6f36ff;
+  border-radius: 3px;
+  font-size: 28px;
+  margin-right: 8px;
+  color: #fff;
+}
+
+.wrapper .search_bx form .icons i.opacity{
+  opacity: .4;
+}
+
+.wrapper .error_text{
+  font-size: 15px;
+  color: #e74c3c;
+  margin-top: 20px;
+  font-weight: 500;
+  margin-bottom: -5px;
+  display: none;
+}
+
+.wrapper .error_text.active{
+  display: block;
+}
+
+.wrapper .search_bx form input.active{
+  border-color: #e74c3c;
+}
+
+.wrapper .search_bx form .icons i.active{
+  opacity: 1;
+}

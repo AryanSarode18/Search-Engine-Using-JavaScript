@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Working Search Engine using JavaScript</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>Search Engine Using JavaScript</header>
+    <div class="search_bx">
+      <form action="https://www.google.com/search?q" method="get" autocomplete="off" target="_blank">
+        <div class="icons">
+          <i class='opacity bx bxl-google'></i>
+        </div>
+        <input type="text" name="q" value="" placeholder="Enter your search query">
+        <button><i class='bx bx-search'></i></button>
+      </form>
+    </div>
+    <div class="error_text">
+      <i class='bx bxs-error-circle'></i>
+      <span>Please enter your search query</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
